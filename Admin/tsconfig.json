@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "node16",                     // ✅ sửa từ "esnext" thành "node16"
+    "lib": ["dom", "esnext"],
+    "jsx": "react-native",
+    "moduleResolution": "node16",           // giữ nguyên nếu bạn dùng Expo
+    "noEmit": true,
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"],
+  "extends": "expo/tsconfig.base"
+}

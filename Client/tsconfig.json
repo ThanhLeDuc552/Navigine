@@ -1,0 +1,22 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "node16",
+    "lib": ["dom", "esnext"],
+    "jsx": "react-native",
+    "moduleResolution": "node16",
+    "noEmit": true,
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",                       // 👈 thêm để hỗ trợ alias import
+    "paths": {
+      "components/*": ["components/*"]    // 👈 hỗ trợ alias ví dụ như `components/FloorplanViewer`
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
